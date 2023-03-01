@@ -1,6 +1,6 @@
 # Install the base requirements for the app.
 # This stage is to support development.
-FROM python:alpine AS base
+FROM python:alpine@sha256:1a5c14626ca7911ae16465aa338ed3f5c1bc0212a3eb16263d0d476bf3d0132d AS base
 WORKDIR /app
 COPY requirements.txt .
 RUN pip install -r requirements.txt
